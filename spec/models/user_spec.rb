@@ -93,7 +93,7 @@ end
 
 
 describe "with a password that's too short" do
-    before { @user.password = @user.password_confirmation = "a" * 5 }
+    before { @user.password = @user.password_confirmation = "a" * 4 }
     it { should be_invalid }
   end
 
